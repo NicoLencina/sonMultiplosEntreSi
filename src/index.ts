@@ -15,7 +15,7 @@ dato2 = Number(
 esMultiplo(dato1, dato2);
 
 if (validador === 0) {
-  console.log("El numero: " + dato1 + " es multiplo de: " + dato2);
+  console.log("El numero: " + dato2 + " es multiplo de: " + dato1);
 } else {
   console.log("No son Multiplos");
 }
