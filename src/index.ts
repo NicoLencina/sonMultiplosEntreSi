@@ -1,10 +1,14 @@
 let dato1,
   dato2: number = 0;
-let validador: number = 0;
+let validador: boolean = true;
 
-function esMultiplo(x: number, y: number): number {
-  validador = x % y;
-  return validador;
+function esMultiplo(x: number, y: number): boolean {
+  let resul: number = y % x;
+  if (resul === 0) {
+    return (validador = true);
+  } else {
+    return (validador = false);
+  }
 }
 
 dato1 = Number(prompt("Ingrese el primer Numero"));
@@ -13,9 +17,9 @@ dato2 = Number(
 );
 
 esMultiplo(dato1, dato2);
-
-if (validador === 0) {
-  console.log("El numero " + dato1 + "es multiplo de " + dato2);
+console.log(validador);
+if (validador === true) {
+  console.log("El numero " + dato2 + " es multiplo de " + dato1);
 } else {
   console.log("No son Multiplos");
 }
