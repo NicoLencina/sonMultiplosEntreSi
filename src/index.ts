@@ -1,8 +1,9 @@
-let dato1, dato2: number;
-let validador: boolean;
+let dato1,
+  dato2: number = 0;
+let validador: number = 0;
 
-function esMultiplo(x: number, y: number): boolean {
-  validador = x % y === 0;
+function esMultiplo(x: number, y: number): number {
+  validador = x % y;
   return validador;
 }
 
@@ -13,7 +14,7 @@ dato2 = Number(
 
 esMultiplo(dato1, dato2);
 
-if (validador === true) {
+if (validador === 0) {
   console.log("El numero " + dato1 + "es multiplo de " + dato2);
 } else {
   console.log("No son Multiplos");
